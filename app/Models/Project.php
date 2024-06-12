@@ -12,7 +12,7 @@ class Project extends Model
     protected $fillable = ['name', 'client_name', 'summary', 'cover_img', 'type_id'];
 
     // relazione howMany con type
-    public function type() {
+    public function types() {
         return $this->belongsTo(Type::class);
     }
 
